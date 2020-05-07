@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Best-selling albums</title>
+  <script src="albums1.js"></script>
+  <script src="albums.js"></script>
+</head>
+
+<body>
+  <h1>Best Selling Albums</h1>
+  <h2>A list of best-selling albums by year in the United States</h2>
+
+  <label for="selectYear">Please select a year: </label>
+  <select id="selectYear">
+  </select>
+
+
+  <label for="selectCountry">Please select a country of origin: </label>
+  <select id="selectCountry">
+    <option value="United States">United States</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="Canada">Canada</option>
+    </select>
+
+
+ <button onclick=filter()>Click me</button>
+
+  <table id="hitsTable">
+    <tr>
+      <th>Year</th>
+      <th>Artist</th>
+      <th>Nationality</th>
+      <th>Album</th>
+    </tr>
+
+    <tbody>
+    </tbody>
+  </table>
+</body>
+</html>
